@@ -1,0 +1,107 @@
+:root {
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+* {
+  margin: 0;
+}
+html {
+  background: url(images/bg-pattern-top.svg) no-repeat left -489px top -489px,
+  url(images/bg-pattern-bottom.svg) no-repeat right -489px bottom -489px;
+  background-color: var(--dark-cyan);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > * {
+  margin-block: 0;
+}
+body > main {
+  margin-block: auto;
+}
+.card-container {
+  background-color: white;
+  border-radius: .8rem;
+  width: 20.2rem;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.2rem;
+}
+.avatar-header-container {
+  background-color: black;
+  background-image: url(images/bg-pattern-card.svg);
+  border-radius: .8rem .8rem 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.avatar-img {
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  bottom: -50px;
+}
+.text-description-container {
+  flex: 1.2;
+}
+.user-info-one {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: .4rem;
+}
+.user-info-two {
+  display: flex;
+  justify-content: center;
+}
+.username {
+  display: inline-flex;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: .6rem;
+}
+.age {
+  display: inline-flex;
+  font-size: 18px;
+  color: var(--dark-grayish-blue);
+}
+.location {
+  color: var(--dark-grayish-blue);
+  font-size: 14px;
+}
+hr {
+  background-color: rgba(134, 134, 134, 0.25);
+  height: 1px;
+  border: none;
+  margin-block: 1.5rem;
+}
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: .25rem;
+}
+.stat-numbers {
+  font-size: 18px;
+  font-weight: 700;
+}
+.stat-description {
+  font-size: 10px;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 2px;
+}
