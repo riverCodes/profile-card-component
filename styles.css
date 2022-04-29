@@ -35,7 +35,7 @@ body > main {
   display: flex;
   flex-direction: column;
   row-gap: 4.2rem;
-  box-shadow: 0 25px 30px 10px rgba(0, 0 ,0 , 0.2)
+  box-shadow: 0 25px 30px 10px rgba(0, 0 ,0 , 0.05)
 }
 .avatar-header-container {
   background-color: black;
